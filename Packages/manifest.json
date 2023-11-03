@@ -1,11 +1,14 @@
 {
   "dependencies": {
+    "com.nuclearband.projectfoldericons": "https://github.com/NuclearBand/NuclearProjectFolderIcons.git",
+    "com.storm.unitysetuputility": "https://github.com/IronFake/UnitySetupUtility.git#upm",
     "com.unity.collab-proxy": "2.1.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.7.5",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.1",
+    "com.vertx.nselection": "https://github.com/vertxxyz/NSelection.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
