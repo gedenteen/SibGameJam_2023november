@@ -7,6 +7,7 @@ public class Clock : MonoBehaviour
 {
     [SerializeField] GameObject handMinutes;
     [SerializeField] GameObject handHours;
+    [SerializeField] GameObject coverOfClock;
 
     public void SetNewTime(float newTimeInHours)
     {
@@ -22,5 +23,10 @@ public class Clock : MonoBehaviour
         rotation = handMinutes.transform.eulerAngles;
         rotation.z = -360f * minutes;
         handMinutes.transform.eulerAngles = rotation;
+    }
+
+    public void ShowCoverOfClock(bool show)
+    {
+        coverOfClock.SetActive(show);
     }
 }
