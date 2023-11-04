@@ -7,5 +7,6 @@ using UnityEngine;
 public class Chapter : ScriptableObject
 {
     public Page[] pages;
+    public string[] textForActions;
     public Chapter[] nextChapters;
 }
