@@ -8,7 +8,6 @@ public class Clock : MonoBehaviour
     [SerializeField] GameObject handMinutes;
     [SerializeField] GameObject handHours;
 
-
     public void SetNewTime(float newTimeInHours)
     {
         float hours = (float)Math.Floor(newTimeInHours % 12.01f);

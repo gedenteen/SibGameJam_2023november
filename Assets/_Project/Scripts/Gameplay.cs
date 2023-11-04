@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.TextCore.Text;
 
 public class Gameplay : MonoBehaviour
 {
@@ -10,14 +11,26 @@ public class Gameplay : MonoBehaviour
     [SerializeField] TextMeshProUGUI textForDialogue;
     [SerializeField] GameObject placeForActions;
     [SerializeField] Clock clock;
+    [SerializeField] Image[] imagesForChars;
 
     [Header("Links to assets")]
     [SerializeField] Chapter chapter;
     [SerializeField] GameObject prefabButtonForAction;
+    [SerializeField] CharactersData charactersData;
 
     [SerializeField] float currentTimeInHours = 0f;
     private int currentPageId = -1;
     private List<GameObject> containerForButtonActions = new List<GameObject>();
+    private Dictionary<CharacterName, Character> dictForCharacters = new Dictionary<CharacterName, Character>();
+
+    private void Awake()
+    {
+        foreach (Character character in charactersData.array)
+        {
+            dictForCharacters[character.name] = character;
+            Debug.Log($"Gameplay: Awake: add {character.name} to dictForCharacters");
+        }
+    }
 
     private void Start()
     {
@@ -34,8 +47,30 @@ public class Gameplay : MonoBehaviour
         {
             // Если нет, то показываем страницу
             textForDialogue.text = chapter.pages[currentPageId].text;
+
+            // меняем время
             currentTimeInHours += chapter.pages[currentPageId].spentTimeInHours;
             clock.SetNewTime(currentTimeInHours);
+
+            // показываем персонажей
+            int ind = 0;
+            foreach (CharacterName charname in chapter.pages[currentPageId].charactersToShow)
+            {
+                imagesForChars[ind].gameObject.SetActive(true);
+
+                RectTransform rectTransform = imagesForChars[ind].gameObject.GetComponent<RectTransform>();
+                rectTransform.sizeDelta = dictForCharacters[charname].sprite.textureRect.size;
+                imagesForChars[ind].sprite = dictForCharacters[charname].sprite;
+
+                ind++;
+            }
+
+            // Отключаем лишние изображения
+            while (ind < imagesForChars.Length - 1)
+            {
+                imagesForChars[ind].gameObject.SetActive(false);
+                ind++;
+            }
         }
         else
         {
