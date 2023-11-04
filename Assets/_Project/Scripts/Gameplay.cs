@@ -9,11 +9,13 @@ public class Gameplay : MonoBehaviour
     [Header("Links on scene")]
     [SerializeField] TextMeshProUGUI textForDialogue;
     [SerializeField] GameObject placeForActions;
+    [SerializeField] Clock clock;
 
     [Header("Links to assets")]
     [SerializeField] Chapter chapter;
     [SerializeField] GameObject prefabButtonForAction;
 
+    [SerializeField] float currentTimeInHours = 0f;
     private int currentPageId = -1;
     private List<GameObject> containerForButtonActions = new List<GameObject>();
 
@@ -32,7 +34,8 @@ public class Gameplay : MonoBehaviour
         {
             // Если нет, то показываем страницу
             textForDialogue.text = chapter.pages[currentPageId].text;
-
+            currentTimeInHours += chapter.pages[currentPageId].spentTimeInHours;
+            clock.SetNewTime(currentTimeInHours);
         }
         else
         {
