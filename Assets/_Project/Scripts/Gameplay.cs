@@ -25,7 +25,7 @@ public class Gameplay : MonoBehaviour
 
     private void Awake()
     {
-        foreach (Character character in charactersData.array)
+        foreach (Character character in charactersData.Array)
         {
             dictForCharacters[character.name] = character;
             Debug.Log($"Gameplay: Awake: add {character.name} to dictForCharacters");

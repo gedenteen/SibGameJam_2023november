@@ -14,12 +14,20 @@ public enum CharacterName
 [System.Serializable]
 public class Character
 {
-    public CharacterName name;
-    public Sprite sprite;
+    [SerializeField] public CharacterName name;
+    [SerializeField] public Sprite sprite;
 }
 
 [CreateAssetMenu(fileName = "CharactersData", menuName = "ScriptableObjects/Create characters data")]
 public class CharactersData : ScriptableObject
 {
-    public Character[] array;
+    [SerializeField] private Character[] array;
+
+    public Character[] Array
+    {
+        get
+        {
+            return array;
+        }
+    }
 }
