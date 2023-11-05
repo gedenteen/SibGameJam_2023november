@@ -57,7 +57,7 @@ public class Gameplay : MonoBehaviour
         currentPageId++;
 
         // Это последняя страница (фраза)?
-        if (currentPageId != chapter.pages.Length)
+        if (currentPageId < chapter.pages.Length)
         {
             // Если нет, то показываем страницу
             if (coroutineForTextAnimation is not null)
