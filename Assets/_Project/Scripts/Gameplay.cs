@@ -57,12 +57,12 @@ public class Gameplay : MonoBehaviour
         currentPageId++;
 
         // Это последняя страница (фраза)?
-        if (currentPageId < chapter.pages.Length)
+        if (currentPageId < chapter.pages.Count)
         {
             // Если нет, то показываем страницу
             if (coroutineForTextAnimation is not null)
                 StopCoroutine(coroutineForTextAnimation);
-            coroutineForTextAnimation = AnimationForText(textForDialogue, chapter.pages[currentPageId].text); //
+            coroutineForTextAnimation = AnimationForText(textForDialogue, chapter.pages[currentPageId].mainText); //
             StartCoroutine(coroutineForTextAnimation);
             //textForDialogue.text = chapter.pages[currentPageId].text; // моментальное отображение текста
 

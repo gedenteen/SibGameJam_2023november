@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewChapter", menuName = "ScriptableObjects/Create Chapter")]
 public class Chapter : ScriptableObject
 {
-    public Page[] pages;
+    public List<Page> pages;
     public string[] textForActions;
     public Chapter[] nextChapters;
 }
