@@ -18,7 +18,10 @@ public class Gameplay : MonoBehaviour
     [SerializeField] GameObject prefabButtonForAction;
     [SerializeField] CharactersData charactersData;
 
+    [Header("Changable values")]
     [SerializeField] float currentTimeInHours = 0f;
+    [SerializeField] float delayForPrintingText = 0.04f;
+
     private int currentPageId = -1;
     private List<GameObject> containerForButtonActions = new List<GameObject>();
     private Dictionary<CharacterName, Character> dictForCharacters = new Dictionary<CharacterName, Character>();
@@ -37,6 +40,16 @@ public class Gameplay : MonoBehaviour
         ShowNextPage();
     }
 
+    IEnumerator AnimationForText(TextMeshProUGUI textmesh, string text)
+    {
+        textmesh.text = "";
+        foreach (char c in text)
+        {
+            textmesh.text += c;
+            yield return new WaitForSeconds(delayForPrintingText);
+        }
+    }
+
     public void ShowNextPage()
     {
         Debug.Log("Gamepalay: ShowNextPage: begin");
@@ -46,7 +59,8 @@ public class Gameplay : MonoBehaviour
         if (currentPageId != chapter.pages.Length)
         {
             // Если нет, то показываем страницу
-            textForDialogue.text = chapter.pages[currentPageId].text;
+            StartCoroutine(AnimationForText(textForDialogue, chapter.pages[currentPageId].text)); //
+            //textForDialogue.text = chapter.pages[currentPageId].text; //
 
             // меняем время
             currentTimeInHours += chapter.pages[currentPageId].spentTimeInHours;
