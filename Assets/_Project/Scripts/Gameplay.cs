@@ -25,6 +25,7 @@ public class Gameplay : MonoBehaviour
     private int currentPageId = -1;
     private List<GameObject> containerForButtonActions = new List<GameObject>();
     private Dictionary<CharacterName, Character> dictForCharacters = new Dictionary<CharacterName, Character>();
+    private IEnumerator coroutineForTextAnimation = null;
 
     private void Awake()
     {
@@ -59,8 +60,11 @@ public class Gameplay : MonoBehaviour
         if (currentPageId != chapter.pages.Length)
         {
             // Если нет, то показываем страницу
-            StartCoroutine(AnimationForText(textForDialogue, chapter.pages[currentPageId].text)); //
-            //textForDialogue.text = chapter.pages[currentPageId].text; //
+            if (coroutineForTextAnimation is not null)
+                StopCoroutine(coroutineForTextAnimation);
+            coroutineForTextAnimation = AnimationForText(textForDialogue, chapter.pages[currentPageId].text); //
+            StartCoroutine(coroutineForTextAnimation);
+            //textForDialogue.text = chapter.pages[currentPageId].text; // моментальное отображение текста
 
             // меняем время
             currentTimeInHours += chapter.pages[currentPageId].spentTimeInHours;
