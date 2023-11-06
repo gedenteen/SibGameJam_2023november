@@ -14,6 +14,7 @@ public class Gameplay : MonoBehaviour
     [SerializeField] GameObject placeForActions;
     [SerializeField] Clock clock;
     [SerializeField] Image[] imagesForChars;
+    [SerializeField] AudioSource audioSourceMusic;
 
     [Header("Links to assets")]
     [SerializeField] Chapter chapter;
@@ -78,15 +79,15 @@ public class Gameplay : MonoBehaviour
         if (currentPageId < chapter.pages.Count)
         {
             var chapterBackground = chapter.pages[currentPageId].backgroundImage;
-                
+
             // Менять бакгроунд, если задан в тексте
             if (chapterBackground)
                 backgroundImage.GetComponent<Image>().sprite = chapterBackground;
-            
+
             // Если нет, то показываем страницу
             if (coroutineForTextAnimation is not null)
                 StopCoroutine(coroutineForTextAnimation);
-            
+
             textForName.text = chapter.pages[currentPageId].upperText;
             coroutineForTextAnimation = AnimationForText(textForDialogue, chapter.pages[currentPageId].mainText); //
             StartCoroutine(coroutineForTextAnimation);
@@ -97,23 +98,36 @@ public class Gameplay : MonoBehaviour
             clock.SetNewTime(currentTimeInHours);
 
             // показываем персонажей
-            int ind = 0;
-            foreach (CharacterName charname in chapter.pages[currentPageId].charactersToShow)
+            if (chapter.pages[currentPageId].changeCharsToShow)
             {
-                imagesForChars[ind].gameObject.SetActive(true);
+                int ind = 0;
+                if (chapter.pages[currentPageId].spritesOfCharsToShow.Count > 0)
+                {
+                    foreach (Sprite charSprite in chapter.pages[currentPageId].spritesOfCharsToShow)
+                    {
+                        imagesForChars[ind].gameObject.SetActive(true);
 
-                RectTransform rectTransform = imagesForChars[ind].gameObject.GetComponent<RectTransform>();
-                rectTransform.sizeDelta = dictForCharacters[charname].sprite.textureRect.size;
-                imagesForChars[ind].sprite = dictForCharacters[charname].sprite;
+                        RectTransform rectTransform = imagesForChars[ind].gameObject.GetComponent<RectTransform>();
+                        rectTransform.sizeDelta = charSprite.textureRect.size;
+                        imagesForChars[ind].sprite = charSprite;
 
-                ind++;
+                        ind++;
+                    }
+                }
+
+                // Отключаем лишние изображения
+                while (ind < imagesForChars.Length - 1)
+                {
+                    imagesForChars[ind].gameObject.SetActive(false);
+                    ind++;
+                }
             }
+            // показываем персонажей - КОНЕЦ
 
-            // Отключаем лишние изображения
-            while (ind < imagesForChars.Length - 1)
+            if (chapter.pages[currentPageId].musicToPlay != null)
             {
-                imagesForChars[ind].gameObject.SetActive(false);
-                ind++;
+                audioSourceMusic.clip = chapter.pages[currentPageId].musicToPlay;
+                audioSourceMusic.Play();
             }
         }
         else
@@ -131,7 +145,8 @@ public class Gameplay : MonoBehaviour
             return;
         }
 
-        if (isUserSelectsAction) {
+        if (isUserSelectsAction)
+        {
             return;
         }
 
@@ -151,7 +166,8 @@ public class Gameplay : MonoBehaviour
             // Для клика по кнопке задаем SelectNextChapter с соответсвующим индексом        
             int chapterId = i;
             Button button = action.GetComponent<Button>();
-            button.onClick.AddListener(() => {
+            button.onClick.AddListener(() =>
+            {
                 isUserSelectsAction = false;
                 SelectNextChapter(chapterId);
             });
