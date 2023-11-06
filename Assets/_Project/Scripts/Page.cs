@@ -16,6 +16,9 @@ public class Page
 
     [SerializeField] public AudioClip musicToPlay;
 
+    [SerializeField] public bool gameOver = false;
+    // [SerializeField] public bool gameEnd = false;
+
     public Page(string upperText, string mainText)
     {
         this.upperText = upperText;
