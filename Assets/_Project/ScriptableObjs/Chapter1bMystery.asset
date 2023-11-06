@@ -20,7 +20,9 @@ MonoBehaviour:
       \u041E\u0433\u043E\u043D\u044C!"
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
-    charactersToShow: 
+    spritesOfCharsToShow: []
+    changeCharsToShow: 0
+    musicToPlay: {fileID: 0}
   - upperText: "\u0424\u0438\u043B\u0438\u043D \u041D\u0443\u0441"
     mainText: "\u0425\u043C, \u043F\u0440\u0432\u0438\u043B\u044C\u043D\u043E...
       \u041D\u0443 \u0447\u0442\u043E \u0436 \u0432\u043E\u0442 \u0432\u0442\u043E\u0440\u0430\u044F!
@@ -28,10 +30,12 @@ MonoBehaviour:
       \u043E\u0441\u0435\u043D\u044C\u044E \u0443\u043C\u0438\u0440\u0430\u0435\u0442."
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
-    charactersToShow: 
+    spritesOfCharsToShow: []
+    changeCharsToShow: 0
+    musicToPlay: {fileID: 0}
   textForActions:
   - "\u041B\u0435\u0441"
   - "\u041E\u0437\u0435\u0440\u043E"
   nextChapters:
   - {fileID: 11400000, guid: f167aab9e687e471d973b90e91ef0baf, type: 2}
-  - {fileID: 11400000, guid: 68ce079f3bbd8d9408e4fee65d2d6d97, type: 2}
+  - {fileID: 11400000, guid: bb3907281c9bc4c35af762f330dde675, type: 2}
