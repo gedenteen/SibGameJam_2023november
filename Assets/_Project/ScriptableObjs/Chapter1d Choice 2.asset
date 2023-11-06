@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c90e11f27acb742bb37ef66994ab30, type: 3}
   m_Name: Chapter1d Choice 2
   m_EditorClassIdentifier: 
-  pages: []
+  pages:
+  - upperText: "\u0412\u042B \u041F\u041E\u0413\u0418\u0411\u041B\u0418"
+    mainText: "\u0437\u0440\u044F \u0431\u044B\u043A\u0430\u043D\u0443\u043B"
+    spentTimeInHours: 0
+    charactersToShow: 
   textForActions: []
   nextChapters: []
