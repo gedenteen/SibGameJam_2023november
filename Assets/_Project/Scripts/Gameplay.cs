@@ -10,6 +10,7 @@ public class Gameplay : MonoBehaviour
     [Header("Links on scene")]
     [SerializeField] TextMeshProUGUI textForName;
     [SerializeField] TextMeshProUGUI textForDialogue;
+    [SerializeField] GameObject backgroundImage;
     [SerializeField] GameObject placeForActions;
     [SerializeField] Clock clock;
     [SerializeField] Image[] imagesForChars;
@@ -76,9 +77,16 @@ public class Gameplay : MonoBehaviour
         // Это последняя страница (фраза)?
         if (currentPageId < chapter.pages.Count)
         {
+            var chapterBackground = chapter.pages[currentPageId].backgroundImage;
+                
+            // Менять бакгроунд, если задан в тексте
+            if (chapterBackground)
+                backgroundImage.GetComponent<Image>().sprite = chapterBackground;
+            
             // Если нет, то показываем страницу
             if (coroutineForTextAnimation is not null)
                 StopCoroutine(coroutineForTextAnimation);
+            
             textForName.text = chapter.pages[currentPageId].upperText;
             coroutineForTextAnimation = AnimationForText(textForDialogue, chapter.pages[currentPageId].mainText); //
             StartCoroutine(coroutineForTextAnimation);

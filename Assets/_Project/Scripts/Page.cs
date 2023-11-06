@@ -8,6 +8,7 @@ public class Page
     [SerializeField] public string upperText;
     [SerializeField] public string mainText;
     [SerializeField] public float spentTimeInHours;
+    [SerializeField] public Sprite backgroundImage;
     [SerializeField] public List<CharacterName> charactersToShow = new List<CharacterName>();
 
     public Page(string upperText, string mainText)
