@@ -28,6 +28,7 @@ public class Gameplay : MonoBehaviour
     private Dictionary<CharacterName, Character> dictForCharacters = new Dictionary<CharacterName, Character>();
     private IEnumerator coroutineForTextAnimation = null;
     private bool textAnimataionIsRunning = false;
+    private bool isUserSelectsAction = false;
 
     private void Awake()
     {
@@ -118,9 +119,15 @@ public class Gameplay : MonoBehaviour
     {
         if (chapter.textForActions.Length != chapter.nextChapters.Length)
         {
-            Debug.LogError("Gamepalay: ShowOptionsForAction: count of actions != count of chapters");
+            SelectNextChapter(0);
             return;
         }
+
+        if (isUserSelectsAction) {
+            return;
+        }
+
+        isUserSelectsAction = true;
 
         placeForActions.SetActive(true);
         for (int i = 0; i < chapter.textForActions.Length; i++)
@@ -136,7 +143,10 @@ public class Gameplay : MonoBehaviour
             // Для клика по кнопке задаем SelectNextChapter с соответсвующим индексом        
             int chapterId = i;
             Button button = action.GetComponent<Button>();
-            button.onClick.AddListener(() => SelectNextChapter(chapterId));
+            button.onClick.AddListener(() => {
+                isUserSelectsAction = false;
+                SelectNextChapter(chapterId);
+            });
         }
     }
 
