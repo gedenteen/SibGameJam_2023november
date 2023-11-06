@@ -74,7 +74,7 @@ MonoBehaviour:
     spritesOfCharsToShow:
     - {fileID: 230546245, guid: 117c4de5cf2640947805cd43b84cae3c, type: 3}
     - {fileID: -1529463147, guid: 2a05ea4bf3b8988428580dd535efd99f, type: 3}
-    changeCharsToShow: 0
+    changeCharsToShow: 1
     musicToPlay: {fileID: 8300000, guid: 7ce04226bd55f1a4aa6b387768137e2a, type: 3}
     gameOver: 0
   - upperText: "\u041C\u0443\u0441\u043A"
