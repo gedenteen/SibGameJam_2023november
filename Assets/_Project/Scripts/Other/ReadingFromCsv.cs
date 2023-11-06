@@ -41,7 +41,7 @@ public class ReadingFromCsv : MonoBehaviour
                 else
                 {
                     chapterToFill.pages[stringIndex].upperText = dataValues[0];
-                    chapterToFill.pages[stringIndex].upperText = dataValues[1];
+                    chapterToFill.pages[stringIndex].mainText = dataValues[1];
                 }
                 stringIndex++;
             }
