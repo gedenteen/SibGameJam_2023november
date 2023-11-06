@@ -49,7 +49,7 @@ MonoBehaviour:
       \u043A\u043E\u0440\u043E\u043B\u0435\u0432\u0441\u0442\u0432\u043E \u043F\u0440\u0438\u0448\u043B\u0430
       \u0431\u043E\u043B\u0435\u0437\u043D\u044C."
     spentTimeInHours: 0
-    backgroundImage: {fileID: 21300000, guid: 4991bc1ce48efc143b42003b7a852965, type: 3}
+    backgroundImage: {fileID: 0}
     spritesOfCharsToShow: []
     changeCharsToShow: 0
     musicToPlay: {fileID: 0}
@@ -568,7 +568,7 @@ MonoBehaviour:
     - {fileID: 230546245, guid: 117c4de5cf2640947805cd43b84cae3c, type: 3}
     - {fileID: 423901489, guid: 5b1c53746b4f3454180697309ed4472b, type: 3}
     changeCharsToShow: 1
-    musicToPlay: {fileID: 0}
+    musicToPlay: {fileID: 8300000, guid: 5a8c5f8207d0f3f46982f6f8cad2fff9, type: 3}
   - upperText: "\u041C\u0443\u0441\u043A"
     mainText: "\u042F-\u044F\u2026 \u043E\u0442\u0432\u0430\u0436\u043D\u044B\u0439
       \u041C\u0443\u0441! \u042F \u043F\u0440\u0438\u0448\u0435\u043B \u0437\u0430
