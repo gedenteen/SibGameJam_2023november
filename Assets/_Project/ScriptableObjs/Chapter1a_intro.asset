@@ -127,7 +127,7 @@ MonoBehaviour:
     spritesOfCharsToShow:
     - {fileID: -767240462, guid: 689f50e181bb24d43996b2bb23ac6971, type: 3}
     changeCharsToShow: 1
-    musicToPlay: {fileID: 0}
+    musicToPlay: {fileID: 8300000, guid: 718e3f64069a7254c91a66cbec556c43, type: 3}
   - upperText: "\u041F\u0440\u0435\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
     mainText: "\u041C\u0443\u0441\u043A! \u042F \u0442\u0430\u043A \u0440\u0430\u0434\u0430,
       \u0447\u0442\u043E \u0442\u044B \u043F\u0440\u0438\u0448\u0435\u043B!"
@@ -557,7 +557,7 @@ MonoBehaviour:
     spentTimeInHours: 0
     backgroundImage: {fileID: 21300000, guid: c84dd6cc07a102d4e85fc2952ec19f9b, type: 3}
     spritesOfCharsToShow: []
-    changeCharsToShow: 0
+    changeCharsToShow: 1
     musicToPlay: {fileID: 8300000, guid: 95d88b82fc208224c9d61ebada17f958, type: 3}
   - upperText: "\u0424\u0438\u043B\u0438\u043D \u041D\u0443\u0441"
     mainText: "\u041A\u0422\u041E \u0432\u0442\u043E\u0440\u0433\u0441\u044F \u0432
