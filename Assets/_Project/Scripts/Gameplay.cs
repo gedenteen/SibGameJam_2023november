@@ -8,6 +8,7 @@ using UnityEngine.TextCore.Text;
 public class Gameplay : MonoBehaviour
 {
     [Header("Links on scene")]
+    [SerializeField] TextMeshProUGUI textForName;
     [SerializeField] TextMeshProUGUI textForDialogue;
     [SerializeField] GameObject placeForActions;
     [SerializeField] Clock clock;
@@ -26,6 +27,7 @@ public class Gameplay : MonoBehaviour
     private List<GameObject> containerForButtonActions = new List<GameObject>();
     private Dictionary<CharacterName, Character> dictForCharacters = new Dictionary<CharacterName, Character>();
     private IEnumerator coroutineForTextAnimation = null;
+    private bool textAnimataionIsRunning = false;
 
     private void Awake()
     {
@@ -43,17 +45,31 @@ public class Gameplay : MonoBehaviour
 
     IEnumerator AnimationForText(TextMeshProUGUI textmesh, string text)
     {
+        textAnimataionIsRunning = true;
+
         textmesh.text = "";
         foreach (char c in text)
         {
             textmesh.text += c;
             yield return new WaitForSeconds(delayForPrintingText);
         }
+
+        textAnimataionIsRunning = false;
     }
 
     public void ShowNextPage()
     {
         Debug.Log("Gamepalay: ShowNextPage: begin");
+
+        if (textAnimataionIsRunning)
+        {
+            textForDialogue.text = chapter.pages[currentPageId].mainText; // моментальное отображение текста
+            if (coroutineForTextAnimation is not null)
+                StopCoroutine(coroutineForTextAnimation);
+            textAnimataionIsRunning = false;
+            return;
+        }
+
         currentPageId++;
 
         // Это последняя страница (фраза)?
@@ -62,6 +78,7 @@ public class Gameplay : MonoBehaviour
             // Если нет, то показываем страницу
             if (coroutineForTextAnimation is not null)
                 StopCoroutine(coroutineForTextAnimation);
+            textForName.text = chapter.pages[currentPageId].upperText;
             coroutineForTextAnimation = AnimationForText(textForDialogue, chapter.pages[currentPageId].mainText); //
             StartCoroutine(coroutineForTextAnimation);
             //textForDialogue.text = chapter.pages[currentPageId].text; // моментальное отображение текста
