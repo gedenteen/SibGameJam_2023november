@@ -58,9 +58,10 @@ MonoBehaviour:
       \u043C\u0438\u0448\u043E\u043D\u043A\u0430."
     spentTimeInHours: 6
     backgroundImage: {fileID: 0}
-    spritesOfCharsToShow: []
-    changeCharsToShow: 0
-    musicToPlay: {fileID: 0}
+    spritesOfCharsToShow:
+    - {fileID: 21300000, guid: 71c4bd791e66a124d88e110b7d38289d, type: 3}
+    changeCharsToShow: 1
+    musicToPlay: {fileID: 8300000, guid: 97a700e4ab493a049bee6b01dc487e6e, type: 3}
     gameOver: 0
   - upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
     mainText: "\u042D\u0442\u043E \u043D\u0435 \u0441\u043E\u0432\u0441\u0435\u043C

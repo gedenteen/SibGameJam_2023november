@@ -30,6 +30,7 @@ MonoBehaviour:
     - {fileID: 187272515, guid: 0bc84e283e7505f4080087b360e742ba, type: 3}
     changeCharsToShow: 1
     musicToPlay: {fileID: 0}
+    gameOver: 0
   - upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
     mainText: "\u0421\u0442\u0430\u0440\u0430\u044F\u0441\u044C \u043D\u0435 \u0441\u043F\u0443\u0441\u043A\u0430\u0442\u044C
       \u0433\u043B\u0430\u0437 \u0441 \u0433\u043E\u043B\u043E\u0432\u044B \u0441\u0432\u043E\u0435\u0433\u043E
@@ -45,9 +46,11 @@ MonoBehaviour:
       \u0431\u0440\u044B\u0437\u043D\u0443\u043B\u0438 \u0441\u043B\u0435\u0437\u044B."
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
-    spritesOfCharsToShow: []
-    changeCharsToShow: 0
-    musicToPlay: {fileID: 0}
+    spritesOfCharsToShow:
+    - {fileID: 21300000, guid: 7db1ea687dd22f244bc6dcb687ec64e7, type: 3}
+    changeCharsToShow: 1
+    musicToPlay: {fileID: 8300000, guid: 97a700e4ab493a049bee6b01dc487e6e, type: 3}
+    gameOver: 0
   - upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
     mainText: "\u0417\u043C\u0435\u044F \u0435\u0449\u0435 \u0440\u0430\u0437 \u043E\u0431\u0435\u0440\u043D\u0443\u043B\u0430\u0441\u044C
       \u0432\u043E\u043A\u0440\u0443\u0433 \u0433\u0435\u0440\u043E\u044F \u0438
@@ -68,6 +71,7 @@ MonoBehaviour:
     spritesOfCharsToShow: []
     changeCharsToShow: 0
     musicToPlay: {fileID: 0}
+    gameOver: 0
   - upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
     mainText: "\u042D\u0442\u043E \u043D\u0435 \u0441\u043E\u0432\u0441\u0435\u043C
       \u0442\u043E\u0442 \u0438\u0441\u0445\u043E\u0434, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
@@ -83,5 +87,6 @@ MonoBehaviour:
     spritesOfCharsToShow: []
     changeCharsToShow: 1
     musicToPlay: {fileID: 0}
+    gameOver: 0
   textForActions: []
   nextChapters: []
