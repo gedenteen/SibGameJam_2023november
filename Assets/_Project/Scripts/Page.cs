@@ -5,15 +5,21 @@ using UnityEngine;
 [System.Serializable]
 public class Page
 {
+    [Header("TEXT")]
     [SerializeField] public string upperText;
     [SerializeField] public string mainText;
     [SerializeField] public float spentTimeInHours;
+
+    [Header("BACKGROUND")]
     [SerializeField] public Sprite backgroundImage;
-    // [SerializeField] public List<CharacterName> charactersToShow = new List<CharacterName>();
 
-    [SerializeField] public List<Sprite> spritesOfCharsToShow = new List<Sprite>();
+
+    [Header("CHARACTERS")]
     [SerializeField] public bool changeCharsToShow = false;
+    [SerializeField] public List<Sprite> spritesOfCharsToShow = new List<Sprite>();
+    [SerializeField] public List<CharacterName> charactersToShow = new List<CharacterName>();
 
+    [Header("AUDIO")]
     [SerializeField] public AudioClip musicToPlay;
 
     [SerializeField] public bool gameOver = false;

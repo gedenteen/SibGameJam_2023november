@@ -13,9 +13,33 @@ MonoBehaviour:
   m_Name: CharactersData
   m_EditorClassIdentifier: Assembly-CSharp::CharactersData
   array:
-  - name: 0
-    sprite: {fileID: 21300000, guid: f3c4a70e311f79d42b5ab22a7f80600b, type: 3}
-  - name: 1
-    sprite: {fileID: 1787870858, guid: a26d875b1b224574b95e990835383005, type: 3}
-  - name: 2
+  - name: 10
+    sprite: {fileID: -767240462, guid: 689f50e181bb24d43996b2bb23ac6971, type: 3}
+    yRotation: 180
+    position: {x: 347, y: 186}
+    size: {x: 397, y: 481}
+  - name: 11
+    sprite: {fileID: 230546245, guid: 117c4de5cf2640947805cd43b84cae3c, type: 3}
+    yRotation: 180
+    position: {x: 290, y: 200}
+    size: {x: 331, y: 401}
+  - name: 12
     sprite: {fileID: -1670775058, guid: 25d1ebbb18cce2049a711f138d788d81, type: 3}
+    yRotation: 180
+    position: {x: 290, y: 200}
+    size: {x: 370, y: 401}
+  - name: 13
+    sprite: {fileID: -1670775058, guid: 25d1ebbb18cce2049a711f138d788d81, type: 3}
+    yRotation: 180
+    position: {x: 290, y: 200}
+    size: {x: 370, y: 401}
+  - name: 20
+    sprite: {fileID: -551188913, guid: d8aa8c25d7f6cbb49b3272cc4f9be6ed, type: 3}
+    yRotation: 0
+    position: {x: 0, y: 0}
+    size: {x: 0, y: 0}
+  - name: 21
+    sprite: {fileID: -551188913, guid: d8aa8c25d7f6cbb49b3272cc4f9be6ed, type: 3}
+    yRotation: 0
+    position: {x: 784, y: -867}
+    size: {x: 277, y: 538}

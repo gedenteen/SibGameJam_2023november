@@ -24,7 +24,7 @@ public class Gameplay : MonoBehaviour
 
     [Header("Changable values")]
     [SerializeField] float currentTimeInHours = 0f;
-    [SerializeField] float delayForPrintingText = 0.04f;
+    [SerializeField] float delayForPrintingText = 0.03f;
 
     private int currentPageId = -1;
     private List<GameObject> containerForButtonActions = new List<GameObject>();
@@ -102,6 +102,29 @@ public class Gameplay : MonoBehaviour
             if (chapter.pages[currentPageId].changeCharsToShow)
             {
                 int ind = 0;
+
+                if (chapter.pages[currentPageId].charactersToShow.Count == 0)
+                {
+                    Debug.LogError($"Gameplay: page have no characters to show");
+                }
+                else
+                {
+                    foreach (CharacterName charName in chapter.pages[currentPageId].charactersToShow)
+                    {
+                        imagesForChars[ind].gameObject.SetActive(true); //активируем Image, который на сцене
+                        imagesForChars[ind].sprite = dictForCharacters[charName].sprite; //устанавливаем в Image спрайт персонажа
+
+                        RectTransform rectTransform = imagesForChars[ind].gameObject.GetComponent<RectTransform>(); //берем RectTransform у Image
+                        rectTransform.anchoredPosition = dictForCharacters[charName].position; //меняем его позицию
+                        rectTransform.sizeDelta = dictForCharacters[charName].size; //и размер
+                        Vector3 rotation = rectTransform.rotation.eulerAngles; // и поворот
+                        rotation.y = dictForCharacters[charName].yRotation;
+                        rectTransform.transform.eulerAngles = rotation;
+
+                        ind++; //с этим Image закончили, идем дальше
+                    }
+                }
+                /*
                 if (chapter.pages[currentPageId].spritesOfCharsToShow.Count > 0)
                 {
                     foreach (Sprite charSprite in chapter.pages[currentPageId].spritesOfCharsToShow)
@@ -114,7 +137,7 @@ public class Gameplay : MonoBehaviour
 
                         ind++;
                     }
-                }
+                }*/
 
                 // Отключаем лишние изображения
                 while (ind < imagesForChars.Length - 1)
