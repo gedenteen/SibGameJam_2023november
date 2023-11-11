@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73c90e11f27acb742bb37ef66994ab30, type: 3}
-  m_Name: Chapter1c Choice 2
+  m_Name: Chapter7_fight
   m_EditorClassIdentifier: 
   pages:
   - upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
