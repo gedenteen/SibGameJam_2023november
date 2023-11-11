@@ -70,6 +70,14 @@ public class Gameplay : MonoBehaviour
         // Это последняя страница (фраза)?
         if (currentPageId < chapter.pages.Count)
         {
+            // Смена музыки?
+            if (chapter.pages[currentPageId].musicToPlay != null)
+            {
+                audioSourceMusic.clip = chapter.pages[currentPageId].musicToPlay;
+                audioSourceMusic.Play();
+            }
+
+            // Катсцена?
             if (chapter.pages[currentPageId].itIsCutscene)
             {
                 cutsceneHandler.Handle(chapter.pages[currentPageId].cutscene, chapter.pages[currentPageId].mainText);
@@ -149,12 +157,6 @@ public class Gameplay : MonoBehaviour
                 }
             }
             // показываем персонажей - КОНЕЦ
-
-            if (chapter.pages[currentPageId].musicToPlay != null)
-            {
-                audioSourceMusic.clip = chapter.pages[currentPageId].musicToPlay;
-                audioSourceMusic.Play();
-            }
         }
         else
         {

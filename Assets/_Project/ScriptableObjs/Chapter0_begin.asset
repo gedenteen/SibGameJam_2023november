@@ -168,7 +168,7 @@ MonoBehaviour:
     - {fileID: -767240462, guid: 689f50e181bb24d43996b2bb23ac6971, type: 3}
     - {fileID: -551188913, guid: d8aa8c25d7f6cbb49b3272cc4f9be6ed, type: 3}
     charactersToShow: 0a00000015000000
-    musicToPlay: {fileID: 8300000, guid: 718e3f64069a7254c91a66cbec556c43, type: 3}
+    musicToPlay: {fileID: 0}
     gameOver: 0
   - itIsCutscene: 0
     cutscene: 0
