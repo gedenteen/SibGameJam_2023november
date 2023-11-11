@@ -16,6 +16,7 @@ public class Gameplay : MonoBehaviour
     [SerializeField] Clock clock;
     [SerializeField] Image[] imagesForChars;
     [SerializeField] AudioSource audioSourceMusic;
+    [SerializeField] CutsceneHandler cutsceneHandler;
 
     [Header("Links to assets")]
     [SerializeField] Chapter chapter;
@@ -24,13 +25,13 @@ public class Gameplay : MonoBehaviour
 
     [Header("Changable values")]
     [SerializeField] float currentTimeInHours = 0f;
-    [SerializeField] float delayForPrintingText = 0.03f;
+
+    public bool gameWasStarted = false;
 
     private int currentPageId = -1;
     private List<GameObject> containerForButtonActions = new List<GameObject>();
     private Dictionary<CharacterName, Character> dictForCharacters = new Dictionary<CharacterName, Character>();
     private IEnumerator coroutineForTextAnimation = null;
-    private bool textAnimataionIsRunning = false;
     private bool isUserSelectsAction = false;
 
     private void Awake()
@@ -42,35 +43,25 @@ public class Gameplay : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void StartGame()
     {
-        ShowNextPage();
-    }
-
-    IEnumerator AnimationForText(TextMeshProUGUI textmesh, string text)
-    {
-        textAnimataionIsRunning = true;
-
-        textmesh.text = "";
-        foreach (char c in text)
+        if (!gameWasStarted)
         {
-            textmesh.text += c;
-            yield return new WaitForSeconds(delayForPrintingText);
+            gameWasStarted = true;
+            ShowNextPage();
         }
-
-        textAnimataionIsRunning = false;
     }
 
     public void ShowNextPage()
     {
         Debug.Log("Gamepalay: ShowNextPage: begin");
 
-        if (textAnimataionIsRunning)
+        if (CommonThings.textAnimataionIsRunning)
         {
             textForDialogue.text = chapter.pages[currentPageId].mainText; // моментальное отображение текста
             if (coroutineForTextAnimation is not null)
                 StopCoroutine(coroutineForTextAnimation);
-            textAnimataionIsRunning = false;
+            CommonThings.textAnimataionIsRunning = false;
             return;
         }
 
@@ -79,6 +70,16 @@ public class Gameplay : MonoBehaviour
         // Это последняя страница (фраза)?
         if (currentPageId < chapter.pages.Count)
         {
+            if (chapter.pages[currentPageId].itIsCutscene)
+            {
+                cutsceneHandler.Handle(chapter.pages[currentPageId].cutscene, chapter.pages[currentPageId].mainText);
+                return;
+            }
+            else
+            {
+                cutsceneHandler.Hide();
+            }
+
             var chapterBackground = chapter.pages[currentPageId].backgroundImage;
 
             // Менять бакгроунд, если задан в тексте
@@ -90,7 +91,7 @@ public class Gameplay : MonoBehaviour
                 StopCoroutine(coroutineForTextAnimation);
 
             textForName.text = chapter.pages[currentPageId].upperText;
-            coroutineForTextAnimation = AnimationForText(textForDialogue, chapter.pages[currentPageId].mainText); //
+            coroutineForTextAnimation = CommonThings.AnimationForText(textForDialogue, chapter.pages[currentPageId].mainText); //
             StartCoroutine(coroutineForTextAnimation);
             //textForDialogue.text = chapter.pages[currentPageId].text; // моментальное отображение текста
 
@@ -106,6 +107,21 @@ public class Gameplay : MonoBehaviour
                 if (chapter.pages[currentPageId].charactersToShow.Count == 0)
                 {
                     Debug.LogError($"Gameplay: page have no characters to show");
+
+                    // Это вот старая версия показа персонажей:
+                    if (chapter.pages[currentPageId].spritesOfCharsToShow.Count > 0)
+                    {
+                        foreach (Sprite charSprite in chapter.pages[currentPageId].spritesOfCharsToShow)
+                        {
+                            imagesForChars[ind].gameObject.SetActive(true);
+
+                            RectTransform rectTransform = imagesForChars[ind].gameObject.GetComponent<RectTransform>();
+                            rectTransform.sizeDelta = charSprite.textureRect.size;
+                            imagesForChars[ind].sprite = charSprite;
+
+                            ind++;
+                        }
+                    }
                 }
                 else
                 {
@@ -124,20 +140,6 @@ public class Gameplay : MonoBehaviour
                         ind++; //с этим Image закончили, идем дальше
                     }
                 }
-                /*
-                if (chapter.pages[currentPageId].spritesOfCharsToShow.Count > 0)
-                {
-                    foreach (Sprite charSprite in chapter.pages[currentPageId].spritesOfCharsToShow)
-                    {
-                        imagesForChars[ind].gameObject.SetActive(true);
-
-                        RectTransform rectTransform = imagesForChars[ind].gameObject.GetComponent<RectTransform>();
-                        rectTransform.sizeDelta = charSprite.textureRect.size;
-                        imagesForChars[ind].sprite = charSprite;
-
-                        ind++;
-                    }
-                }*/
 
                 // Отключаем лишние изображения
                 while (ind < imagesForChars.Length - 1)

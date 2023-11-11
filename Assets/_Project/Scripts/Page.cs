@@ -5,6 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class Page
 {
+    [Header("CUTSCENE?")]
+    [SerializeField] public bool itIsCutscene = false;
+    [SerializeField] public Cutscenes cutscene;
+
     [Header("TEXT")]
     [SerializeField] public string upperText;
     [SerializeField] public string mainText;

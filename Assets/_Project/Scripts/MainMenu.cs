@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private GameObject myCanvasGroup;
     [SerializeField] private Image backgroundImage;
+    [SerializeField] private Gameplay gameplay;
 
     private bool isActive = true;
     private bool exitedFromMainMenu = false;
@@ -32,6 +33,14 @@ public class MainMenu : MonoBehaviour
             backgroundImage.sprite = null;
             backgroundImage.color = new Color(1f, 1f, 1f, 0.5f);
         }
+    }
+
+    public void ButtonStart()
+    {
+        if (!gameplay.gameWasStarted)
+            gameplay.StartGame();
+
+        ShowOrHide();
     }
 
     public void Quit()
