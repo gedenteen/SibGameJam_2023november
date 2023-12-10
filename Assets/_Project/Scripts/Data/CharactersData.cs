@@ -11,11 +11,14 @@ public enum CharacterName
     MussCalm = 11,
     MussCalmWithoutLegs = 12,
     MussFight = 13,
+    MussFightWithoutLegs = 14,
     PrincessCalm = 20,
     PrincessCalmWithoutLegs = 21,
     PrincessSniffy = 22,
     PrincessSniffyWithoutLegs = 23,
     OwlCalm = 30,
+    OwlSleep = 31,
+    OwlBadEnd = 32,
 
     END = 99
 }

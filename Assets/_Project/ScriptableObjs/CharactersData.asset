@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04696fb87b2ab26478b1c4cce0d077d1, type: 3}
   m_Name: CharactersData
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   array:
   - name: 10
     sprite: {fileID: -558764509, guid: 69786fb2011653742a1d0ca7394896ca, type: 3}
@@ -33,6 +33,11 @@ MonoBehaviour:
     yRotation: 0
     position: {x: 290, y: 200}
     size: {x: 370, y: 401}
+  - name: 14
+    sprite: {fileID: 1594725119, guid: 130985d6d67126748b9ac0aab4bd7fe3, type: 3}
+    yRotation: 0
+    position: {x: 300, y: 186}
+    size: {x: 444, y: 481}
   - name: 20
     sprite: {fileID: -651793228, guid: 8417044df65ff954aabd7119003f640b, type: 3}
     yRotation: 0
@@ -58,3 +63,13 @@ MonoBehaviour:
     yRotation: 0
     position: {x: 854, y: 394}
     size: {x: 402, y: 920}
+  - name: 31
+    sprite: {fileID: 837163405, guid: e0748e6017fb5cb4fb9bcc2df146b2de, type: 3}
+    yRotation: 0
+    position: {x: 854, y: 394}
+    size: {x: 507, y: 920}
+  - name: 32
+    sprite: {fileID: 21300000, guid: 45a98a9956a824c4e9e730010791307b, type: 3}
+    yRotation: 0
+    position: {x: 550, y: 460}
+    size: {x: 720, y: 920}

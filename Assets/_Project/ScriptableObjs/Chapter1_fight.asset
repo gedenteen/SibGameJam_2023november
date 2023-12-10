@@ -28,7 +28,7 @@ MonoBehaviour:
     backgroundImage: {fileID: 0}
     changeCharsToShow: 1
     spritesOfCharsToShow: []
-    charactersToShow: 
+    charactersToShow: 0e0000001e000000
     musicToPlay: {fileID: 0}
     gameOver: 0
   - itIsCutscene: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
     backgroundImage: {fileID: 0}
     changeCharsToShow: 1
     spritesOfCharsToShow: []
-    charactersToShow: 
+    charactersToShow: 20000000
     musicToPlay: {fileID: 0}
     gameOver: 0
   - itIsCutscene: 0
