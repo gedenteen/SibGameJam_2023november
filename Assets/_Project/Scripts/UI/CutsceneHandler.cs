@@ -7,14 +7,19 @@ using UnityEngine.UI;
 public class CutsceneHandler : MonoBehaviour
 {
     //public static CutsceneHandler instance;
+    [Header("Links on scene")]
     [SerializeField] private Gameplay gameplay;
     [SerializeField] private CanvasGroup canvasGroup;
 
+    [Header("Fields for cutscene scroll")]
     [SerializeField] private Sprite[] spritesOfScroll;
     [SerializeField] private float scrollAnimationDelay = 0.15f;
-    [SerializeField] private Image imageForScroll;
+    [SerializeField] private Image mainImage;
     [SerializeField] private TextMeshProUGUI textOnScroll;
     private bool animationWasShown = false;
+
+    [Header("Fields for cutscenes screames")]
+    [SerializeField] private Sprite screamerOwl;
 
     private IEnumerator coroutineForTextAnimation = null;
 
@@ -41,6 +46,9 @@ public class CutsceneHandler : MonoBehaviour
             case Cutscenes.introScroll:
                 StartCoroutine(IntroScroll(text));
                 break;
+            case Cutscenes.screamerOwl:
+                ScreamerOwl();
+                break;
             default:
                 Debug.LogError($"CutsceneHandler: Handle: unexpected {cutscene}");
                 return;
@@ -59,7 +67,6 @@ public class CutsceneHandler : MonoBehaviour
         canvasGroup.gameObject.SetActive(true);
     }
 
-
     private IEnumerator IntroScroll(string text)
     {
         if (!animationWasShown)
@@ -67,7 +74,7 @@ public class CutsceneHandler : MonoBehaviour
             int ind = 0;
             while (ind < spritesOfScroll.Length)
             {
-                imageForScroll.sprite = spritesOfScroll[ind];
+                mainImage.sprite = spritesOfScroll[ind];
                 yield return new WaitForSeconds(scrollAnimationDelay);
                 ind++;
             }
@@ -78,5 +85,11 @@ public class CutsceneHandler : MonoBehaviour
         //coroutineForTextAnimation = CommonThings.AnimationForText(textOnScroll, text);
         //StartCoroutine(coroutineForTextAnimation);
         textOnScroll.text = text;
+    }
+
+    private void ScreamerOwl()
+    {
+        textOnScroll.gameObject.SetActive(false);
+        mainImage.sprite = screamerOwl;
     }
 }

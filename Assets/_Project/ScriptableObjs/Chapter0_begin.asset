@@ -158,7 +158,7 @@ MonoBehaviour:
     gameOver: 0
   - itIsCutscene: 0
     cutscene: 0
-    upperText: "\u041F\u0440\u0435\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
+    upperText: "\u041F\u0440\u0438\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
     mainText: "\u041C\u0443\u0441\u043A! \u042F \u0442\u0430\u043A \u0440\u0430\u0434\u0430,
       \u0447\u0442\u043E \u0442\u044B \u043F\u0440\u0438\u0448\u0435\u043B!"
     spentTimeInHours: 0
@@ -219,7 +219,7 @@ MonoBehaviour:
     gameOver: 0
   - itIsCutscene: 0
     cutscene: 0
-    upperText: "\u041F\u0440\u0435\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
+    upperText: "\u041F\u0440\u0438\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
     mainText: "\u041C\u0443\u0441\u043A! \u041D\u0435 \u043F\u0435\u0440\u0435\u0447\u044C
       \u043C\u043D\u0435, \u044F \u0443\u0436\u0435 \u0432\u0441\u0435 \u043F\u0440\u0438\u0434\u0443\u043C\u0430\u043B\u0430!
       \u0425\u043E\u0442\u044C \u0442\u044B \u0438 \u043D\u0435 \u0442\u0430\u043A
@@ -230,11 +230,9 @@ MonoBehaviour:
       \u0432 \u043D\u0430\u0448\u0435\u043C \u0437\u0430\u043C\u043A\u0435 \u0437\u0430\u0431\u043E\u043B\u0435\u043B\u0438!"
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
-    changeCharsToShow: 0
-    spritesOfCharsToShow:
-    - {fileID: 21300000, guid: 689f50e181bb24d43996b2bb23ac6971, type: 3}
-    - {fileID: 21300000, guid: d8aa8c25d7f6cbb49b3272cc4f9be6ed, type: 3}
-    charactersToShow: 
+    changeCharsToShow: 1
+    spritesOfCharsToShow: []
+    charactersToShow: 0a00000017000000
     musicToPlay: {fileID: 0}
     gameOver: 0
   - itIsCutscene: 0
@@ -246,16 +244,14 @@ MonoBehaviour:
       \u0431\u043E\u043B\u0435\u0437\u043D\u0438?"
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
-    changeCharsToShow: 0
-    spritesOfCharsToShow:
-    - {fileID: 21300000, guid: 689f50e181bb24d43996b2bb23ac6971, type: 3}
-    - {fileID: 21300000, guid: d8aa8c25d7f6cbb49b3272cc4f9be6ed, type: 3}
-    charactersToShow: 
+    changeCharsToShow: 1
+    spritesOfCharsToShow: []
+    charactersToShow: 0a00000015000000
     musicToPlay: {fileID: 0}
     gameOver: 0
   - itIsCutscene: 0
     cutscene: 0
-    upperText: "\u041F\u0440\u0435\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
+    upperText: "\u041F\u0440\u0438\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
     mainText: "\u0421\u043D\u0430\u0447\u0430\u043B\u0430, \u0442\u044B \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0448\u044C
       \u0447\u0438\u0445\u0430\u0442\u044C. \u041F\u043E\u0442\u043E\u043C \u0442\u044B
       \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u0435\u0448\u044C \u0440\u0430\u0437\u043B\u0438\u0447\u0430\u0442\u044C
@@ -271,9 +267,7 @@ MonoBehaviour:
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
     changeCharsToShow: 0
-    spritesOfCharsToShow:
-    - {fileID: 21300000, guid: 689f50e181bb24d43996b2bb23ac6971, type: 3}
-    - {fileID: 21300000, guid: d8aa8c25d7f6cbb49b3272cc4f9be6ed, type: 3}
+    spritesOfCharsToShow: []
     charactersToShow: 
     musicToPlay: {fileID: 0}
     gameOver: 0
@@ -294,7 +288,7 @@ MonoBehaviour:
     gameOver: 0
   - itIsCutscene: 0
     cutscene: 0
-    upperText: "\u041F\u0440\u0435\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
+    upperText: "\u041F\u0440\u0438\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
     mainText: "\u041D\u0435 \u0433\u043E\u0432\u043E\u0440\u0438 \u0433\u043B\u0443\u043F\u043E\u0441\u0442\u0438!
       \u0410\u043F\u0447\u0445\u0438! \u042F \u0436\u0435 \u043D\u0435 \u0431\u043E\u043B\u044C\u043D\u0430"
     spentTimeInHours: 0
@@ -308,7 +302,7 @@ MonoBehaviour:
     gameOver: 0
   - itIsCutscene: 0
     cutscene: 0
-    upperText: "\u041F\u0440\u0435\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
+    upperText: "\u041F\u0440\u0438\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
     mainText: "\u0418 \u0442\u0435\u043C \u043D\u0435 \u043C\u0435\u043D\u0435\u0435,
       \u0443 \u043C\u0435\u043D\u044F \u0435\u0441\u0442\u044C \u0434\u043B\u044F
       \u0442\u0435\u0431\u044F \u043E\u043F\u0430\u0441\u043D\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435.
@@ -339,7 +333,7 @@ MonoBehaviour:
     gameOver: 0
   - itIsCutscene: 0
     cutscene: 0
-    upperText: "\u041F\u0440\u0435\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
+    upperText: "\u041F\u0440\u0438\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
     mainText: "\u041F\u043B\u043E\u0445\u0430\u044F \u043D\u043E\u0432\u043E\u0441\u0442\u044C
       \u0432 \u0442\u043E\u043C, \u0447\u0442\u043E \u043B\u0435\u043A\u0430\u0440\u0441\u0442\u0432\u043E
       \u0445\u0440\u0430\u043D\u0438\u0442\u044C\u0441\u044F \u0443 \u043C\u0443\u0434\u0440\u043E\u0433\u043E
@@ -373,7 +367,7 @@ MonoBehaviour:
     gameOver: 0
   - itIsCutscene: 0
     cutscene: 0
-    upperText: "\u041F\u0440\u0435\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
+    upperText: "\u041F\u0440\u0438\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
     mainText: "\u0410\u043F\u0447\u0445\u0438! \u042F \u0440\u0430\u0441\u0441\u043A\u0430\u0436\u0443,
       \u043A\u0430\u043A \u0434\u043E \u043D\u0435\u0433\u043E \u0434\u043E\u0431\u0440\u0430\u0442\u044C\u0441\u044F.
       \u0410 \u0435\u0441\u043B\u0438 \u043E\u043D \u0443\u0436\u0435 \u043F\u043E\u0433\u0438\u0431,
@@ -411,7 +405,7 @@ MonoBehaviour:
     gameOver: 0
   - itIsCutscene: 0
     cutscene: 0
-    upperText: "\u041F\u0440\u0435\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
+    upperText: "\u041F\u0440\u0438\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
     mainText: "\u0425\u043E\u0440\u043E\u0448\u043E\u2026 \u042F \u0434\u0430\u043C
       \u0442\u0435\u0431\u0435 \u043D\u0430\u0448\u0438 \u0444\u0430\u043C\u0438\u043B\u044C\u043D\u044B\u0435
       \u0447\u0430\u0441\u044B, \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u043C\u043E\u0433
@@ -433,7 +427,7 @@ MonoBehaviour:
     upperText: "\u041C\u0443\u0441\u043A"
     mainText: "\u042F \u0432\u0430\u0441 \u043F\u043E\u043D\u044F\u043B \u043F\u0440\u0438\u043D\u0446\u0435\u0441\u0441\u0430!
       \u042F \u043D\u0435 \u043F\u043E\u0434\u0432\u0435\u0434\u0443 \u0432\u0430\u0441!
-      \u041F\u0440\u0438\u043D\u0435\u0441\u0443, \u043B\u0435\u043A\u0430\u0440\u0441\u0442\u0432\u043E!
+      \u041F\u0440\u0438\u043D\u0435\u0441\u0443 \u043B\u0435\u043A\u0430\u0440\u0441\u0442\u0432\u043E!
       \u041C\u044B \u0441\u043F\u0430\u0441\u0435\u043C \u0432\u0441\u0435\u0445
       \u043C\u044B\u0448\u0435\u0439 \u0432 \u043A\u043E\u0440\u043E\u043B\u0435\u0432\u0441\u0442\u0432\u0435!"
     spentTimeInHours: 0
@@ -447,7 +441,7 @@ MonoBehaviour:
     gameOver: 0
   - itIsCutscene: 0
     cutscene: 0
-    upperText: "\u041F\u0440\u0435\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
+    upperText: "\u041F\u0440\u0438\u043D\u0446\u0435\u0441\u0441\u0430 \u0420\u0430\u0434\u0435\u043D\u0438\u0442\u0442\u0430"
     mainText: "\u041C\u044B \u0432\u0441\u0435 \u043D\u0430\u0434\u0435\u0435\u043C\u0441\u044F
       \u043D\u0430 \u0442\u0435\u0431\u044F!"
     spentTimeInHours: 0
@@ -473,13 +467,12 @@ MonoBehaviour:
     spentTimeInHours: 0
     backgroundImage: {fileID: 21300000, guid: e32fa6084f76f204fb17d6b5993ae593, type: 3}
     changeCharsToShow: 1
-    spritesOfCharsToShow:
-    - {fileID: 230546245, guid: 117c4de5cf2640947805cd43b84cae3c, type: 3}
-    charactersToShow: 
+    spritesOfCharsToShow: []
+    charactersToShow: 0c000000
     musicToPlay: {fileID: 8300000, guid: 7a6f660b5258d854cbc709d1957542cc, type: 3}
     gameOver: 0
   - itIsCutscene: 0
-    cutscene: 0
+    cutscene: 1
     upperText: "\u041C\u044B\u0441\u043B\u0438"
     mainText: "\u0421\u043E\u043B\u043D\u0446\u0435 \u043D\u0435\u0434\u0430\u0432\u043D\u043E
       \u0432\u0441\u0442\u0430\u043B\u043E, \u0430 \u0437\u043D\u0430\u0447\u0438\u0442
@@ -677,8 +670,21 @@ MonoBehaviour:
     charactersToShow: 
     musicToPlay: {fileID: 0}
     gameOver: 0
+  - itIsCutscene: 1
+    cutscene: 1
+    upperText: a
+    mainText: b
+    spentTimeInHours: 0
+    backgroundImage: {fileID: 0}
+    changeCharsToShow: 0
+    spritesOfCharsToShow:
+    - {fileID: 230546245, guid: 117c4de5cf2640947805cd43b84cae3c, type: 3}
+    - {fileID: 423901489, guid: 5b1c53746b4f3454180697309ed4472b, type: 3}
+    charactersToShow: 
+    musicToPlay: {fileID: 8300000, guid: 95d88b82fc208224c9d61ebada17f958, type: 3}
+    gameOver: 0
   - itIsCutscene: 0
-    cutscene: 0
+    cutscene: 1
     upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
     mainText: "\u0414\u0432\u0430 \u043E\u0433\u0440\u043E\u043C\u043D\u044B\u0445
       \u0433\u043B\u0430\u0437\u0430 \u043F\u043E\u044F\u0432\u0438\u043B\u0438\u0441\u044C
@@ -690,10 +696,10 @@ MonoBehaviour:
       \u043D\u0430 \u043C\u0435\u0441\u0442\u0435."
     spentTimeInHours: 0
     backgroundImage: {fileID: 21300000, guid: c07c3f49b972fc74985f1b44bfd35549, type: 3}
-    changeCharsToShow: 1
+    changeCharsToShow: 0
     spritesOfCharsToShow: []
     charactersToShow: 
-    musicToPlay: {fileID: 8300000, guid: 95d88b82fc208224c9d61ebada17f958, type: 3}
+    musicToPlay: {fileID: 0}
     gameOver: 0
   - itIsCutscene: 0
     cutscene: 0
@@ -703,10 +709,8 @@ MonoBehaviour:
     spentTimeInHours: 0
     backgroundImage: {fileID: 21300000, guid: 75746aa0ecf6ca4429c42c8edb058904, type: 3}
     changeCharsToShow: 1
-    spritesOfCharsToShow:
-    - {fileID: 230546245, guid: 117c4de5cf2640947805cd43b84cae3c, type: 3}
-    - {fileID: 423901489, guid: 5b1c53746b4f3454180697309ed4472b, type: 3}
-    charactersToShow: 
+    spritesOfCharsToShow: []
+    charactersToShow: 0c0000001e000000
     musicToPlay: {fileID: 0}
     gameOver: 0
   - itIsCutscene: 0

@@ -14,32 +14,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharactersData
   array:
   - name: 10
-    sprite: {fileID: -767240462, guid: 689f50e181bb24d43996b2bb23ac6971, type: 3}
-    yRotation: 180
-    position: {x: 347, y: 186}
+    sprite: {fileID: -558764509, guid: 69786fb2011653742a1d0ca7394896ca, type: 3}
+    yRotation: 0
+    position: {x: 320, y: 186}
     size: {x: 397, y: 481}
   - name: 11
-    sprite: {fileID: 230546245, guid: 117c4de5cf2640947805cd43b84cae3c, type: 3}
-    yRotation: 180
+    sprite: {fileID: -392234918, guid: dc7c0edf3bf60d046b18ba96ca316e16, type: 3}
+    yRotation: 0
     position: {x: 290, y: 200}
     size: {x: 331, y: 401}
   - name: 12
-    sprite: {fileID: -1670775058, guid: 25d1ebbb18cce2049a711f138d788d81, type: 3}
-    yRotation: 180
-    position: {x: 290, y: 200}
-    size: {x: 370, y: 401}
+    sprite: {fileID: -392234918, guid: dc7c0edf3bf60d046b18ba96ca316e16, type: 3}
+    yRotation: 0
+    position: {x: 320, y: 186}
+    size: {x: 397, y: 481}
   - name: 13
-    sprite: {fileID: -1670775058, guid: 25d1ebbb18cce2049a711f138d788d81, type: 3}
-    yRotation: 180
+    sprite: {fileID: 1594725119, guid: 130985d6d67126748b9ac0aab4bd7fe3, type: 3}
+    yRotation: 0
     position: {x: 290, y: 200}
     size: {x: 370, y: 401}
   - name: 20
-    sprite: {fileID: -551188913, guid: d8aa8c25d7f6cbb49b3272cc4f9be6ed, type: 3}
+    sprite: {fileID: -651793228, guid: 8417044df65ff954aabd7119003f640b, type: 3}
     yRotation: 0
     position: {x: 0, y: 0}
     size: {x: 0, y: 0}
   - name: 21
-    sprite: {fileID: -551188913, guid: d8aa8c25d7f6cbb49b3272cc4f9be6ed, type: 3}
+    sprite: {fileID: -651793228, guid: 8417044df65ff954aabd7119003f640b, type: 3}
     yRotation: 0
     position: {x: 784, y: -867}
-    size: {x: 277, y: 538}
+    size: {x: 293, y: 538}
+  - name: 22
+    sprite: {fileID: 859333229, guid: 6a6f15a2fc16a2b41bbba283cba0f647, type: 3}
+    yRotation: 0
+    position: {x: 0, y: 0}
+    size: {x: 0, y: 0}
+  - name: 23
+    sprite: {fileID: 859333229, guid: 6a6f15a2fc16a2b41bbba283cba0f647, type: 3}
+    yRotation: 0
+    position: {x: 784, y: -867}
+    size: {x: 335, y: 538}
+  - name: 30
+    sprite: {fileID: 1922964352, guid: 4a24ed53de309374a9e0d01a077bcc2f, type: 3}
+    yRotation: 0
+    position: {x: 854, y: 394}
+    size: {x: 402, y: 920}

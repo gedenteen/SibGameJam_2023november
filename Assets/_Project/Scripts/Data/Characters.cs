@@ -13,6 +13,8 @@ public enum CharacterName
     MussFight = 13,
     PrincessCalm = 20,
     PrincessCalmWithoutLegs = 21,
+    PrincessSniffy = 22,
+    PrincessSniffyWithoutLegs = 23,
     OwlCalm = 30,
 
     END = 99
