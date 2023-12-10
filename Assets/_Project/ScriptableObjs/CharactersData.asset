@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 04696fb87b2ab26478b1c4cce0d077d1, type: 3}
   m_Name: CharactersData
-  m_EditorClassIdentifier: Assembly-CSharp::CharactersData
+  m_EditorClassIdentifier:
   array:
   - name: 10
     sprite: {fileID: -558764509, guid: 69786fb2011653742a1d0ca7394896ca, type: 3}

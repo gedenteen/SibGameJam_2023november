@@ -426,9 +426,7 @@ MonoBehaviour:
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
     changeCharsToShow: 0
-    spritesOfCharsToShow:
-    - {fileID: 230546245, guid: 117c4de5cf2640947805cd43b84cae3c, type: 3}
-    - {fileID: 21300000, guid: d8aa8c25d7f6cbb49b3272cc4f9be6ed, type: 3}
+    spritesOfCharsToShow: []
     charactersToShow: 
     musicToPlay: {fileID: 0}
     gameOver: 0
@@ -443,9 +441,7 @@ MonoBehaviour:
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
     changeCharsToShow: 0
-    spritesOfCharsToShow:
-    - {fileID: 21300000, guid: 117c4de5cf2640947805cd43b84cae3c, type: 3}
-    - {fileID: 21300000, guid: d8aa8c25d7f6cbb49b3272cc4f9be6ed, type: 3}
+    spritesOfCharsToShow: []
     charactersToShow: 
     musicToPlay: {fileID: 0}
     gameOver: 0
@@ -696,8 +692,8 @@ MonoBehaviour:
     upperText: a
     mainText: b
     spentTimeInHours: 0
-    backgroundImage: {fileID: 0}
-    changeCharsToShow: 1
+    backgroundImage: {fileID: 21300000, guid: c84dd6cc07a102d4e85fc2952ec19f9b, type: 3}
+    changeCharsToShow: 0
     spritesOfCharsToShow: []
     charactersToShow: 
     musicToPlay: {fileID: 8300000, guid: 95d88b82fc208224c9d61ebada17f958, type: 3}
@@ -715,7 +711,7 @@ MonoBehaviour:
       \u043D\u0430 \u043C\u0435\u0441\u0442\u0435."
     spentTimeInHours: 0
     backgroundImage: {fileID: 21300000, guid: c07c3f49b972fc74985f1b44bfd35549, type: 3}
-    changeCharsToShow: 0
+    changeCharsToShow: 1
     spritesOfCharsToShow: []
     charactersToShow: 
     musicToPlay: {fileID: 0}
@@ -921,9 +917,9 @@ MonoBehaviour:
       \u043D\u0435 \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u0430\u0433\u043E\u0441\u043A\u043B\u043E\u043D\u043D\u0430?"
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
-    changeCharsToShow: 0
+    changeCharsToShow: 1
     spritesOfCharsToShow: []
-    charactersToShow: 
+    charactersToShow: 0c0000001e000000
     musicToPlay: {fileID: 0}
     gameOver: 0
   textForActions:
