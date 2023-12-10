@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6b9e72d4baeea7d4b8e0adc9f7231f52
+guid: 8708a72b18cf89147a18039b3b8f446d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -107,19 +107,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -139,10 +126,10 @@ TextureImporter:
       name: "\u043A\u043E\u0440\u043E\u043B\u044C 1_0"
       rect:
         serializedVersion: 2
-        x: 504
-        y: 412
-        width: 2585
-        height: 2531
+        x: 499
+        y: 402
+        width: 2595
+        height: 2549
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e29f6dba9515ea4da3985972b876979
-      internalID: 461136246
+      spriteID: 0d7db9522b5b40841b2ac0bf82e4a022
+      internalID: 972540199
       vertices: []
       indices: 
       edges: []
@@ -159,7 +146,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: d9f08babaedeb6f458898778817e17ff
     internalID: 0
     vertices: []
     indices: 
@@ -167,7 +154,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u043A\u043E\u0440\u043E\u043B\u044C 1_0": 461136246
+      "\u043A\u043E\u0440\u043E\u043B\u044C 1_0": 972540199
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
