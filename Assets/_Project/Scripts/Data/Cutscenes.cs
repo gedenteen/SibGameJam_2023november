@@ -5,5 +5,5 @@ using UnityEngine;
 public enum Cutscenes
 {
     introScroll,
-    screamerOwl
+    ShowOnlyImage
 }

@@ -94,7 +94,7 @@ public class Gameplay : MonoBehaviour
         // Катсцена?
         if (chapter.pages[currentPageId].itIsCutscene)
         {
-            cutsceneHandler.Handle(chapter.pages[currentPageId].cutscene, chapter.pages[currentPageId].mainText);
+            cutsceneHandler.Handle(chapter.pages[currentPageId].cutscene, chapter.pages[currentPageId].mainText, chapter.pages[currentPageId].backgroundImage);
             return;
         }
         else

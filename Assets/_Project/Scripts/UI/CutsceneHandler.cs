@@ -39,15 +39,15 @@ public class CutsceneHandler : MonoBehaviour
         //Handle(Cutscenes.introScroll);
     }
 
-    public void Handle(Cutscenes cutscene, string text)
+    public void Handle(Cutscenes cutscene, string text, Sprite sprite)
     {
         switch (cutscene)
         {
             case Cutscenes.introScroll:
                 StartCoroutine(IntroScroll(text));
                 break;
-            case Cutscenes.screamerOwl:
-                ScreamerOwl();
+            case Cutscenes.ShowOnlyImage:
+                ShowOnlyImage(sprite);
                 break;
             default:
                 Debug.LogError($"CutsceneHandler: Handle: unexpected {cutscene}");
@@ -87,9 +87,9 @@ public class CutsceneHandler : MonoBehaviour
         textOnScroll.text = text;
     }
 
-    private void ScreamerOwl()
+    private void ShowOnlyImage(Sprite sprite)
     {
         textOnScroll.gameObject.SetActive(false);
-        mainImage.sprite = screamerOwl;
+        mainImage.sprite = sprite;
     }
 }
