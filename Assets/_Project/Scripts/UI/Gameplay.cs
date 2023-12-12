@@ -91,6 +91,13 @@ public class Gameplay : MonoBehaviour
             audioSourceMusic.Play();
         }
 
+        // меняем время, если есть добавочное время
+        if (chapter.pages[currentPageId].spentTimeInHours > 0f)
+        {
+            currentTimeInHours += chapter.pages[currentPageId].spentTimeInHours;
+            clock.SetNewTime(currentTimeInHours);
+        }
+
         // Катсцена?
         if (chapter.pages[currentPageId].itIsCutscene)
         {
@@ -116,13 +123,6 @@ public class Gameplay : MonoBehaviour
         coroutineForTextAnimation = CommonThings.AnimationForText(textForDialogue, chapter.pages[currentPageId].mainText); //
         StartCoroutine(coroutineForTextAnimation);
         //textForDialogue.text = chapter.pages[currentPageId].text; // моментальное отображение текста
-
-        // меняем время, если есть добавочное время
-        if (chapter.pages[currentPageId].spentTimeInHours > 0f)
-        {
-            currentTimeInHours += chapter.pages[currentPageId].spentTimeInHours;
-            clock.SetNewTime(currentTimeInHours);
-        }
 
         // показываем персонажей
         if (chapter.pages[currentPageId].changeCharsToShow)

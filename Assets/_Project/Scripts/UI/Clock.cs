@@ -12,7 +12,7 @@ public class Clock : MonoBehaviour
 
     public void SetNewTime(float newTimeInHours)
     {
-        float hours = (float)Math.Floor(newTimeInHours % 12.01f);
+        float hours = (float)Math.Floor(newTimeInHours % 12f);
         hours = hours / 12f;
         float minutes = newTimeInHours % 1f;
         Debug.Log($"Clock: SetNewTime: hours={hours} minutes={minutes}");
