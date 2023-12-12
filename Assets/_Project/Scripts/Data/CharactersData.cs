@@ -19,6 +19,9 @@ public enum CharacterName
     OwlCalm = 30,
     OwlSleep = 31,
     OwlBadEnd = 32,
+    LaskaCalm = 40,
+    LaskaWithHand = 41,
+    LaskaBadEnd = 42,
 
     END = 99
 }

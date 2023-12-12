@@ -73,3 +73,18 @@ MonoBehaviour:
     yRotation: 0
     position: {x: 550, y: 460}
     size: {x: 720, y: 920}
+  - name: 40
+    sprite: {fileID: 161154896, guid: 22343f6eee473fc48850445b05b90027, type: 3}
+    yRotation: 0
+    position: {x: 961, y: 345}
+    size: {x: 667, y: 833}
+  - name: 41
+    sprite: {fileID: -1643617513, guid: 329884e7e89f22348a8a13d3a02c0540, type: 3}
+    yRotation: 0
+    position: {x: 961, y: 345}
+    size: {x: 667, y: 833}
+  - name: 42
+    sprite: {fileID: 21300000, guid: 71c4bd791e66a124d88e110b7d38289d, type: 3}
+    yRotation: 0
+    position: {x: 550, y: 460}
+    size: {x: 720, y: 920}
