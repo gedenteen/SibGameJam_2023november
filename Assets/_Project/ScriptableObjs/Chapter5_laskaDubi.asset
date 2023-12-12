@@ -168,9 +168,9 @@ MonoBehaviour:
       \u043C\u044B\u0448\u043E\u043D\u043A\u0430, \u0438..."
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
-    changeCharsToShow: 0
+    changeCharsToShow: 1
     spritesOfCharsToShow: []
-    charactersToShow: 
+    charactersToShow: 0c00000028000000
     musicToPlay: {fileID: 0}
     gameOver: 0
   textForActions:
