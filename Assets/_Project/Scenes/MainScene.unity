@@ -234,7 +234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -359.99994, y: 0}
+  m_AnchoredPosition: {x: -359.99997, y: 0}
   m_SizeDelta: {x: -720, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88320321
@@ -4100,7 +4100,7 @@ MonoBehaviour:
   - {fileID: 665070031}
   audioSourceMusic: {fileID: 2081231921}
   cutsceneHandler: {fileID: 220359223}
-  chapter: {fileID: 11400000, guid: e8b27345fe0304e1e870c81dfede317e, type: 2}
+  chapter: {fileID: 11400000, guid: edcac0796239749dfb3f5a5397b54b11, type: 2}
   prefabButtonForAction: {fileID: 4372065863707529983, guid: 5e61abefc3a79f74f946a08a769a7a68, type: 3}
   charactersData: {fileID: 11400000, guid: 5464d4d32e1d61f489b75b2585773b60, type: 2}
   currentTimeInHours: 0
@@ -4610,7 +4610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -359.99994, y: 0}
+  m_AnchoredPosition: {x: -359.99997, y: 0}
   m_SizeDelta: {x: -720, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1722810164

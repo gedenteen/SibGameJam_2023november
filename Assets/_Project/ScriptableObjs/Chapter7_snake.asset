@@ -162,9 +162,9 @@ MonoBehaviour:
       \u0441\u0442\u043E\u0440\u043E\u043D\u0443."
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
-    changeCharsToShow: 0
+    changeCharsToShow: 1
     spritesOfCharsToShow: []
-    charactersToShow: 
+    charactersToShow: 0c00000032000000
     musicToPlay: {fileID: 0}
     gameOver: 0
   textForActions:

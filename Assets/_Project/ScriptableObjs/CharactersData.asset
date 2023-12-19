@@ -101,5 +101,5 @@ MonoBehaviour:
   - name: 52
     sprite: {fileID: 21300000, guid: 7db1ea687dd22f244bc6dcb687ec64e7, type: 3}
     yRotation: 0
-    position: {x: 841, y: 280}
-    size: {x: 545, y: 684}
+    position: {x: 433, y: 328}
+    size: {x: 1369.4, y: 926.7}
