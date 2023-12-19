@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Chapter7_snake
   m_EditorClassIdentifier: 
   pages:
-  - upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
+  - itIsCutscene: 0
+    cutscene: 0
+    upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
     mainText: "\u041C\u0443\u0441\u043A \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u043B\u0441\u044F
       \u0432 \u043F\u0443\u0442\u044C, \u0441\u0432\u0435\u0440\u044F\u044F\u0441\u044C
       \u0441\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0435\u043C. \u041E\u043D
@@ -25,11 +27,14 @@ MonoBehaviour:
       \u0414\u0443\u0431\u0438 \u0434\u0430\u043B \u0435\u043C\u0443 \u0441\u0435\u0440\u044B\u0435?"
     spentTimeInHours: 0
     backgroundImage: {fileID: 21300000, guid: 8fdd6b4c61af7da42a093d206000b33c, type: 3}
-    spritesOfCharsToShow: []
     changeCharsToShow: 1
+    spritesOfCharsToShow: []
+    charactersToShow: 
     musicToPlay: {fileID: 8300000, guid: 7a6f660b5258d854cbc709d1957542cc, type: 3}
     gameOver: 0
-  - upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
+  - itIsCutscene: 0
+    cutscene: 0
+    upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
     mainText: "\u0413\u0435\u0440\u043E\u0439 \u0431\u044B\u0441\u0442\u0440\u043E
       \u043D\u0430\u0448\u0435\u043B \u0436\u0438\u043B\u044C\u0435 \u0437\u0430\u0433\u0430\u0434\u043E\u0447\u043D\u043E\u0439
       \u043F\u043E\u0434\u0440\u0443\u0433\u0438 \u0414\u0443\u0431\u0438. \u041D\u043E
@@ -41,11 +46,14 @@ MonoBehaviour:
       \u043F\u0440\u043E\u0431\u0440\u0430\u043B\u0441\u044F \u0432 \u043D\u043E\u0440\u0443."
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
-    spritesOfCharsToShow: []
     changeCharsToShow: 0
+    spritesOfCharsToShow: []
+    charactersToShow: 
     musicToPlay: {fileID: 0}
     gameOver: 0
-  - upperText: "\u041C\u044B\u0441\u043B\u0438"
+  - itIsCutscene: 0
+    cutscene: 0
+    upperText: "\u041C\u044B\u0441\u043B\u0438"
     mainText: "\u041C\u0440\u0430\u0447\u043D\u0430\u044F \u043E\u0431\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430
       \u0443\u0436\u0435 \u043D\u0435 \u0442\u0430\u043A \u043F\u0443\u0433\u0430\u0435\u0442.
       \u041F\u043E \u043A\u0440\u0430\u0439\u043D\u0435\u0439 \u043C\u0435\u0440\u0435
@@ -68,12 +76,15 @@ MonoBehaviour:
       \u0434\u043B\u044F \u043B\u0435\u043A\u0430\u0440\u0441\u0442\u0432\u0430?"
     spentTimeInHours: 0
     backgroundImage: {fileID: 21300000, guid: 16c958182889ec84cb174236658baa81, type: 3}
+    changeCharsToShow: 1
     spritesOfCharsToShow:
     - {fileID: 230546245, guid: 117c4de5cf2640947805cd43b84cae3c, type: 3}
-    changeCharsToShow: 1
+    charactersToShow: 0c000000
     musicToPlay: {fileID: 8300000, guid: 1c91eae04da053b47a1604a2ce61072c, type: 3}
     gameOver: 0
-  - upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
+  - itIsCutscene: 0
+    cutscene: 0
+    upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
     mainText: "\u041C\u0443\u0441\u043A \u0441 \u043E\u0442\u043E\u0440\u043E\u0436\u043D\u043E\u0441\u0442\u044C\u044E
       \u043E\u0433\u043B\u044F\u0434\u044B\u0432\u0430\u043B\u0441\u044F \u0432 \u044D\u0442\u043E\u043C
       \u043C\u0440\u0430\u0447\u043D\u043E\u043C \u0441\u0435\u0440\u043E\u043C \u043B\u043E\u0433\u043E\u0432\u0435,
@@ -83,11 +94,25 @@ MonoBehaviour:
       \u0447\u0430\u0441\u0442\u044F\u0445 \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u044F"
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
-    spritesOfCharsToShow: []
     changeCharsToShow: 0
+    spritesOfCharsToShow: []
+    charactersToShow: 
     musicToPlay: {fileID: 0}
     gameOver: 0
-  - upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
+  - itIsCutscene: 1
+    cutscene: 1
+    upperText: a
+    mainText: a
+    spentTimeInHours: 0
+    backgroundImage: {fileID: 21300000, guid: 6401eac04fafd6347b9f3a3461545adc, type: 3}
+    changeCharsToShow: 1
+    spritesOfCharsToShow: []
+    charactersToShow: 
+    musicToPlay: {fileID: 0}
+    gameOver: 0
+  - itIsCutscene: 0
+    cutscene: 0
+    upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
     mainText: "\u0412 \u043C\u0438\u0433 \u041C\u0443\u0441\u043A \u0437\u0430\u043C\u0435\u0440
       \u043E\u0442 \u043F\u0440\u043E\u0431\u0435\u0440\u0430\u044E\u0449\u0438\u0445
       \u0434\u043E \u0433\u043B\u0443\u0431\u0438\u043D\u044B \u0434\u0443\u0448\u0438
@@ -101,11 +126,14 @@ MonoBehaviour:
       \u043F\u043E\u0434\u043A\u0440\u0430\u043B\u0441\u044F \u0441\u0437\u0430\u0434\u0438."
     spentTimeInHours: 0
     backgroundImage: {fileID: 21300000, guid: 8d5fd24e98f001a4aaad2e1d7235f673, type: 3}
-    spritesOfCharsToShow: []
     changeCharsToShow: 1
+    spritesOfCharsToShow: []
+    charactersToShow: 
     musicToPlay: {fileID: 0}
     gameOver: 0
-  - upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
+  - itIsCutscene: 0
+    cutscene: 0
+    upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
     mainText: "\u041C\u0443\u0441\u043A \u043C\u0435\u0434\u043B\u0435\u043D\u043D\u043E
       \u043E\u0431\u0435\u0440\u043D\u0443\u043B\u0441\u044F, \u0438 \u0435\u0433\u043E
       \u0433\u043B\u0430\u0437\u0430 \u0432 \u043F\u0430\u043D\u0438\u043A\u0435
@@ -114,13 +142,16 @@ MonoBehaviour:
       \u043A\u043E\u0436\u0430, \u043A\u043B\u044B\u043A\u0438 \u0438... "
     spentTimeInHours: 0
     backgroundImage: {fileID: 21300000, guid: 16c958182889ec84cb174236658baa81, type: 3}
+    changeCharsToShow: 1
     spritesOfCharsToShow:
     - {fileID: 230546245, guid: 117c4de5cf2640947805cd43b84cae3c, type: 3}
     - {fileID: 187272515, guid: 0bc84e283e7505f4080087b360e742ba, type: 3}
-    changeCharsToShow: 1
+    charactersToShow: 0c00000032000000
     musicToPlay: {fileID: 0}
     gameOver: 0
-  - upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
+  - itIsCutscene: 0
+    cutscene: 0
+    upperText: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0447\u0438\u043A"
     mainText: "\u041E\u0434\u0438\u043D \u0431\u043E\u043B\u044C\u0448\u043E\u0439
       \u0443\u0441\u0442\u0430\u0432\u0438\u0432\u0448\u0438\u0441\u044F \u043D\u0430
       \u043D\u0435\u0433\u043E \u0433\u043B\u0430\u0437, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
@@ -131,8 +162,9 @@ MonoBehaviour:
       \u0441\u0442\u043E\u0440\u043E\u043D\u0443."
     spentTimeInHours: 0
     backgroundImage: {fileID: 0}
-    spritesOfCharsToShow: []
     changeCharsToShow: 0
+    spritesOfCharsToShow: []
+    charactersToShow: 
     musicToPlay: {fileID: 0}
     gameOver: 0
   textForActions:

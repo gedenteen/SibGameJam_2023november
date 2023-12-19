@@ -88,3 +88,18 @@ MonoBehaviour:
     yRotation: 0
     position: {x: 515, y: 337}
     size: {x: 765, y: 977}
+  - name: 50
+    sprite: {fileID: -632263753, guid: e1f34a4ae4afa274f96c922f51a08bbd, type: 3}
+    yRotation: 0
+    position: {x: 841, y: 282}
+    size: {x: 546, y: 696}
+  - name: 51
+    sprite: {fileID: 230768110, guid: bbb5f0d5e82bc0640bb080351de5f63a, type: 3}
+    yRotation: 0
+    position: {x: 841, y: 280}
+    size: {x: 545, y: 684}
+  - name: 52
+    sprite: {fileID: 21300000, guid: 7db1ea687dd22f244bc6dcb687ec64e7, type: 3}
+    yRotation: 0
+    position: {x: 841, y: 280}
+    size: {x: 545, y: 684}

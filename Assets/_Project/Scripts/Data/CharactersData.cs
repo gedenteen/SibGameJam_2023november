@@ -22,6 +22,9 @@ public enum CharacterName
     LaskaCalm = 40,
     LaskaWithHand = 41,
     LaskaBadEnd = 42,
+    SnakeCalm = 50,
+    SnakeWithFlower = 51,
+    SnakeBadEnd = 52,
 
     END = 99
 }
