@@ -13,16 +13,15 @@ public class Settings : MonoBehaviour
     [SerializeField] private Slider sliderMusicVolume;
     [SerializeField] private Slider sliderSoundsVolume;
 
-    Resolution[] resolutions;
+    private RefreshRate currentRefreshRate;
+    private int currentResolutionIndex;
+    private List<Resolution> filteredResolutions;
+
     private bool isInitialized = false;
 
     // Strings for PlayerPrefs
     private readonly string pp_musicVolume = "MusicVolume";
     private readonly string pp_soundVolume = "SoundVolume";
-
-    private void Awake()
-    {
-    }
 
     private void Start()
     {
@@ -46,16 +45,29 @@ public class Settings : MonoBehaviour
         SetSoundsVolume(soundVolume);
         sliderSoundsVolume.value = soundVolume;
 
-        resolutions = Screen.resolutions;
+        Resolution[] resolutions = Screen.resolutions;
+        currentRefreshRate = Screen.currentResolution.refreshRateRatio;
+        filteredResolutions = new List<Resolution>();
 
-        List<string> options = new List<string>();
-
-        int currentResolutionIndex = 0;
+        // Цикл по всем возможным разрешениям экрана. Отбираем те, что подходят по герцовке
         for (int i = 0; i < resolutions.Length; i++)
         {
-            options.Add(resolutions[i].width + "x" + resolutions[i].height);
+            Debug.Log($"{resolutions[i].width}x{resolutions[i].height} {resolutions[i].refreshRateRatio.value} Hz");
+            //if (resolutions[i].refreshRateRatio.numerator == currentRefreshRate.numerator && resolutions[i].refreshRateRatio.denominator == currentRefreshRate.denominator)
+            if (resolutions[i].refreshRateRatio.value == currentRefreshRate.value)
+            {
+                filteredResolutions.Add(resolutions[i]);
+            }
+        }
 
-            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+        // Отображаем filteredResolutions в Dropdown
+        List<string> options = new List<string>();
+        for (int i = 0; i < filteredResolutions.Count; i++)
+        {
+            string optionText = string.Concat(filteredResolutions[i].width, "x", filteredResolutions[i].height);
+            options.Add(optionText);
+
+            if (filteredResolutions[i].width == Screen.currentResolution.width && filteredResolutions[i].height == Screen.currentResolution.height)
             {
                 currentResolutionIndex = i;
             }
@@ -71,7 +83,7 @@ public class Settings : MonoBehaviour
 
     public void SetResolution(int resolutionIndex)
     {
-        Resolution res = resolutions[resolutionIndex];
+        Resolution res = filteredResolutions[resolutionIndex];
         Screen.SetResolution(res.width, res.height, Screen.fullScreen);
     }
 
