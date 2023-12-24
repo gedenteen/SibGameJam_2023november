@@ -2814,7 +2814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1092062570
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4100,7 +4100,7 @@ MonoBehaviour:
   - {fileID: 665070031}
   audioSourceMusic: {fileID: 2081231921}
   cutsceneHandler: {fileID: 220359223}
-  chapter: {fileID: 11400000, guid: 6bae1bcfa9426408287dbea2db7bf063, type: 2}
+  chapter: {fileID: 11400000, guid: 98a97db3ca38e7a469b912b7cf9cdbca, type: 2}
   prefabButtonForAction: {fileID: 4372065863707529983, guid: 5e61abefc3a79f74f946a08a769a7a68, type: 3}
   charactersData: {fileID: 11400000, guid: 5464d4d32e1d61f489b75b2585773b60, type: 2}
   currentTimeInHours: 0

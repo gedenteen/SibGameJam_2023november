@@ -75,7 +75,7 @@ public class Gameplay : MonoBehaviour
         {
             HandlePage();
         }
-        else if (!chapter.pages[currentPageId].gameEnd)
+        else
         {
             // Если да, то показываем варианты действий
             ShowOptionsForAction();
@@ -84,6 +84,13 @@ public class Gameplay : MonoBehaviour
 
     private void HandlePage()
     {
+        // Конец игры?
+        if (chapter.pages[currentPageId].gameEnd)
+        {
+            currentPageId--;
+            return;
+        }
+
         // Смена музыки?
         if (chapter.pages[currentPageId].musicToPlay != null)
         {

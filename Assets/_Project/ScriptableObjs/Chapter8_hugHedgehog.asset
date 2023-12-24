@@ -698,7 +698,7 @@ MonoBehaviour:
     spritesOfCharsToShow: []
     charactersToShow: 
     musicToPlay: {fileID: 0}
-    gameEnd: 1
+    gameEnd: 0
   - itIsCutscene: 0
     cutscene: 0
     upperText: "\u041A\u043E\u043D\u0435\u0446 \u0438\u0433\u0440\u044B"
