@@ -118,3 +118,8 @@ MonoBehaviour:
     yRotation: 0
     position: {x: 701, y: 223}
     size: {x: 766, y: 952}
+  - name: 70
+    sprite: {fileID: 461136246, guid: 6b9e72d4baeea7d4b8e0adc9f7231f52, type: 3}
+    yRotation: 180
+    position: {x: 845, y: 194}
+    size: {x: 516, y: 506}

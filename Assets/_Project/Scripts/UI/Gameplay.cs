@@ -75,7 +75,7 @@ public class Gameplay : MonoBehaviour
         {
             HandlePage();
         }
-        else
+        else if (!chapter.pages[currentPageId].gameEnd)
         {
             // Если да, то показываем варианты действий
             ShowOptionsForAction();

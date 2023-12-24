@@ -28,7 +28,7 @@ public enum CharacterName
     HedgehogCalm = 60,
     HedgehogAngry = 61,
     HedgehogBadEnd = 62,
-
+    MouseKing = 70,
     END = 99
 }
 

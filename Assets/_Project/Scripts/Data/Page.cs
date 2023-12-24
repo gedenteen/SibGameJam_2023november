@@ -26,7 +26,7 @@ public class Page
     [Header("AUDIO")]
     [SerializeField] public AudioClip musicToPlay;
 
-    [SerializeField] public bool gameOver = false;
+    [SerializeField] public bool gameEnd = false;
     // [SerializeField] public bool gameEnd = false;
 
     public Page(string upperText, string mainText)
