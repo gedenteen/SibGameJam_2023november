@@ -25,6 +25,9 @@ public enum CharacterName
     SnakeCalm = 50,
     SnakeWithFlower = 51,
     SnakeBadEnd = 52,
+    HedgehogCalm = 60,
+    HedgehogAngry = 61,
+    HedgehogBadEnd = 62,
 
     END = 99
 }

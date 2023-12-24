@@ -103,3 +103,18 @@ MonoBehaviour:
     yRotation: 0
     position: {x: 433, y: 328}
     size: {x: 1369.4, y: 926.7}
+  - name: 60
+    sprite: {fileID: -2011945663, guid: 860cc07ecd51f4442a06b399ce7cd09e, type: 3}
+    yRotation: 180
+    position: {x: 858, y: 248}
+    size: {x: 568, y: 612}
+  - name: 61
+    sprite: {fileID: -23327195, guid: a096abe28c9cf8442887a29617ea7f85, type: 3}
+    yRotation: 180
+    position: {x: 858, y: 248}
+    size: {x: 568, y: 612}
+  - name: 62
+    sprite: {fileID: 21300000, guid: f7a1fc43accaf974f9d8b666a3cecf56, type: 3}
+    yRotation: 0
+    position: {x: 701, y: 223}
+    size: {x: 766, y: 952}
