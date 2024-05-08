@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "SibGameJam.sln"
+    "dotnet.defaultSolution": "SibGameJam_2023.sln"
 }

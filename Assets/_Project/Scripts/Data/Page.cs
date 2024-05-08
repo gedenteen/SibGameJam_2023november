@@ -11,7 +11,7 @@ public class Page
 
     [Header("TEXT")]
     [SerializeField] public string upperText;
-    [SerializeField] public string mainText;
+    [SerializeField] [TextAreaAttribute] public string mainText;
     [SerializeField] public float spentTimeInHours;
 
     [Header("BACKGROUND")]
